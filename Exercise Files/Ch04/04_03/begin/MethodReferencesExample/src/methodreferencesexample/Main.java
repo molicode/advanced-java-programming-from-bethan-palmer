@@ -1,8 +1,7 @@
 package methodreferencesexample;
 
 /**
- *
- * @author bethan
+ * @author luis
  */
 public class Main {
 
@@ -19,6 +18,11 @@ public class Main {
 
         System.out.println("Area: " + shapes.getArea(s));
 
+        Shapes shapes2 = (Square square) -> square.calculateArea();
+        System.out.println("Area: " + shapes2.getArea(s));
+
+        Shapes shapes3 = Square::calculateArea;
+        System.out.println("Area: " + shapes3.getArea(s));
     }
 
 }

@@ -3,7 +3,7 @@ package methodreferencesexample;
 
 /**
  *
- * @author bethan
+ * @author luis
  */
 @FunctionalInterface
 public interface Shapes {
