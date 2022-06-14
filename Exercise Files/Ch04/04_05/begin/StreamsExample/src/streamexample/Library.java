@@ -9,13 +9,26 @@ import java.util.ArrayList;
 
 /**
  *
- * @author betha
+ * @author luis
  */
 public class Library {
 
     public static void main(String[] args) {
         
         ArrayList<Book> books = populateLibrary();
+        books.stream()
+                .filter(book -> {
+                    return book.getAuthor().startsWith("J");
+                })
+                .filter(book -> {
+                    return book.getTitle().startsWith("E");
+                })
+                .forEach(System.out::println);
+
+//        books.stream()
+//                .filter(book -> book.getAuthor().startsWith("J"))
+//                .filter(book -> book.getTitle().startsWith("E"))
+//                .forEach(System.out::println);
         
         
     }
