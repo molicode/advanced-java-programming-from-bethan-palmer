@@ -24,11 +24,11 @@ public class Kitchen {
         });
         
         Thread cook2 = new Thread(() -> {
-            synchronized (bowl) {
+            synchronized (spoon) {
                 System.out.println("Cook2: Holding the bowl...");
                 System.out.println("Cook2: Waiting for the spoon...");
 
-                synchronized (spoon) {
+                synchronized (bowl) {
                     System.out.println("Cook1: Holding the spoon and the bowl.");
                 }
             }
