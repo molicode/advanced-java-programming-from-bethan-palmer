@@ -25,7 +25,7 @@ public class GenericsExample {
         names2.add("Kelly");        
         String name2 = names2.get(0);
         System.out.println("First name: " + name2);
-        names2.add(7);
+//        names2.add(7);
         
     }
     
