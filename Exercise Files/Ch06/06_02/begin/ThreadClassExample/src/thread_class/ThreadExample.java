@@ -7,7 +7,7 @@ package thread_class;
 
 /**
  *
- * @author bethan
+ * @author luis
  */
 public class ThreadExample extends Thread {
     
@@ -20,6 +20,5 @@ public class ThreadExample extends Thread {
         }
     }
     
-    
-    
+
 }

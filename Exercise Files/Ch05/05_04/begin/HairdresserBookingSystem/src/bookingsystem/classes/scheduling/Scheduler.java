@@ -6,28 +6,28 @@
 package scheduling;
 
 import employees.Hairdresser;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- *
- * @author Bethan
+ * @author luis
  */
 public class Scheduler {
-    
+
     private static HashMap<String, Hairdresser> hairdressers = new HashMap<>();
 
 
-    public Scheduler() {        
+    public Scheduler() {
         Hairdresser harry = new Hairdresser("Harry");
         Hairdresser jill = new Hairdresser("Jill");
         harry.setDaysAvailable("Monday", "Tuesday");
         jill.setDaysAvailable("Wednesday");
-        
-        
+
+
         hairdressers.put("Harry", harry);
         hairdressers.put("Jill", jill);
-        
+
     }
 
     public void bookHaircut(String hairdresserName, String day) {

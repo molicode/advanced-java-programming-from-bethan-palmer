@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 module bookingsystem {
-    
-    
+
+    exports scheduling;
+ 
 }
